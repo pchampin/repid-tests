@@ -1,0 +1,11 @@
+@base <http://example.org/test/>.
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<#sco> rdfs:subPropertyOf rdfs:subClassOf.
+<#type> rdfs:subPropertyOf rdf:type.
+
+
+<#Teacher> <#sco> <#Person>.
+<#Person> <#sco> <#Agent>.
+<#pa> <#type> <#Teacher>.
